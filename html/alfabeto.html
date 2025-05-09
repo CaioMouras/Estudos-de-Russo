@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alfabeto Russo</title>
+  <link rel="stylesheet" href="../css/alfabeto.css">
+</head>
+<body>
+    <h1>Alfabeto Russo</h1>
+
+  <div class="alfabeto-container" id="alfabeto-container">
+    <!-- Letras geradas dinamicamente -->
+  </div>
+
+  <div id="letra-modal" class="letra-modal">
+    <div id="letra-info">
+      <button id="close-btn">×</button>
+      <img id="imagem-letra" src="" alt="Imagem da letra">
+      <div id="letra-details">
+        <p id="letra-cirilico"></p>
+        <p id="palavra-ru"></p>
+        <p id="transliteracao"></p>
+        <p id="traducao"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-btn">
+    <a href="index.html" class="botao-voltar">← Voltar</a>
+  </div>
+
+  <script type="module" src="../js/alfabeto/alfabetoDados.js"></script>
+  <script type="module" src="../js/alfabeto/alfabetoMain.js"></script>
+
+</body>
+</html>

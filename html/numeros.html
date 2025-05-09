@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+    <link rel="stylesheet" href="../css/numeros.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Estudo de Números em Russo</h1>
+
+    <div class="selecao">
+      <label for="grupoSelect">Grupo numérico:</label>
+      <select id="grupoSelect">
+        <option value="">Selecione um grupo</option>
+        <option value="unidades">Unidades (0–9)</option>
+        <option value="dezenas">Dezenas (10–99)</option>
+        <option value="centenas">Centenas (100–999)</option>
+        <option value="milhar">Milhares (1000+)</option>
+      </select>
+    </div>
+
+    <div class="selecao">
+      <label for="intervaloSelect">Intervalo:</label>
+      <select id="intervaloSelect" disabled>
+        <option value="">Selecione o intervalo</option>
+      </select>
+    </div>
+
+    <div class="selecao">
+      <label for="numeroSelect">Número:</label>
+      <select id="numeroSelect" disabled>
+        <option value="">Selecione o número</option>
+      </select>
+    </div>
+
+    <div class="selecao">
+      <label for="pesquisaInput">Ou digite um número:</label>
+      <input type="number" id="pesquisaInput" min="0" placeholder="Ex: 42">
+      <div class="container-btn">
+        <button id="btnPesquisar" class="botao-voltar">Pesquisar</button>
+      </div>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script type="module" src="../js/números/numMain.js"></script>
+
+  <div class="container-btn">
+    <a href="index.html" class="botao-voltar">← Voltar</a>
+  </div>
+  
+
+</body>
+</html>

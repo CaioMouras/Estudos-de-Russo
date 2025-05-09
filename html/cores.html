@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <link rel="stylesheet" href="../css/cores.css"/>
+</head>
+<body>
+    <h1>Cores em Russo</h1>
+    <div class="cores-container" id="cores-container"></div>
+  
+    <!-- Modal de cor -->
+    <div class="cor-modal" id="cor-modal">
+      <div class="cor-info" id="cor-info">
+        <button id="close-btn" onclick="fecharModal()">X</button>
+        <div id="cor-exibida"></div>
+        <div id="cor-nome"></div>
+        <div id="cor-translit"></div>
+        <div id="cor-traducao"></div>
+      </div>
+    </div>
+
+    <div class="container-btn">
+        <a href="index.html" class="botao-voltar">← Voltar</a>
+    </div>
+  
+    <script src="../js/cores/coresDados.js"></script>
+    <script src="../js/cores/coresMain.js"></script>
+</body>
+</html>
